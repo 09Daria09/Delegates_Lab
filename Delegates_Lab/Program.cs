@@ -131,6 +131,12 @@ namespace Delegates_Lab
 
             Console.WriteLine($"{arithmetic.Func(5, arithmetic.Odd)}");
 
+            Arithmetic arithmetic1 = new Arithmetic();
+
+            ArithmDeleg arithm = new ArithmDeleg(arithmetic1.Odd);
+
+            Console.WriteLine(arithm.Invoke(6));
+
         }
     }
 }
